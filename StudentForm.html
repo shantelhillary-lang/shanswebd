@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Document</title>
 
     <style>
         .topnav {
@@ -24,22 +24,13 @@
             background-color: #ddd;
             color: black;
         }
-
-        body {
-            font-family: Arial;
-            margin: 0;
-        }
-
-        .content {
-            padding: 20px;
-        }
     </style>
 </head>
 
 <body>
 
     <div class="topnav">
-        <a href="index.html">Home</a>
+        <a href="./">Home</a>
         <a href="about.html">About Us</a>
         <a href="projects.html">Our Projects</a>
         <a href="products.html">Our Products</a>
@@ -48,10 +39,35 @@
         <a href="StudentForm.html">Student Form</a>
     </div>
 
-    <div class="content">
-        <h1>Our Projects</h1>
-        <p>Details about projects go here.</p>
-    </div>
+    <h1>Student Form</h1>
+
+    <form action="submit_student.php" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+
+        <label for="Subjectline">Subject Line:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <label for="Message">Message:</label>
+        <input type="text" id="Message" name="Message" required>
+        <br><br>
+
+        <label for="feedback">Send Message:</label>
+        <br>
+
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit Details">
+
+    </form>
 
 </body>
 </html>
